@@ -21,7 +21,7 @@ namespace meisai.government
                 personList.Add(new Person());
             }
         }
-        public void deltaTAfter(int day = 365)
+        public void deltaTAfter(int day = 365) 
         {
             //先进行政策范围内的事情：
             //再遍历每个人实现个人的改变，包括赚钱等等
