@@ -40,7 +40,9 @@ namespace meisai.government
             {
                 state.allMoney += person.getMyMoney();
             }
-            
         }
+        public int GetGovMoney() => state.govMoney;
+        public int GetAllMoney() => state.allMoney;
+        public int GetMenCount() => personList.Count;
     }
 }

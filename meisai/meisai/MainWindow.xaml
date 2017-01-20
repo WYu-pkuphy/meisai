@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Label x:Name="label" Content="天，相当于地球上：" Height="26.294" Margin="195.876,10,206.448,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockday" Height="14.873" Margin="59.991,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFD2CFEB" HorizontalAlignment="Left" Width="130.885"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="label_Copy" Content="时间：" HorizontalAlignment="Left" Height="26.294" Margin="10,10,0,0" VerticalAlignment="Top" Width="44.991"/>
+        <TextBlock x:Name="textBlockyear" Height="14.873" Margin="0,15,70.563,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFD2CFEB" HorizontalAlignment="Right" Width="130.885"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="label_Copy1" Content="年" HorizontalAlignment="Right" Height="26.294" Margin="0,10,20.572,0" VerticalAlignment="Top" Width="44.991"/>
+        <Button x:Name="buttonstartayear" Content="经过一年" HorizontalAlignment="Left" Height="57.262" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="114.756"/>
+
     </Grid>
 </Window>

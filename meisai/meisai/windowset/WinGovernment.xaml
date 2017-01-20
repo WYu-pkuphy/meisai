@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:meisai.windowset"
         mc:Ignorable="d"
-        Title="WinGovernment" Height="300" Width="300">
+        Title="政府状态" Height="300" Width="432.8">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlockgovmoney" TextWrapping="Wrap" Margin="83.066,15,0,0" HorizontalAlignment="Left" Width="265.268" Background="#FF5CFCFF" Height="14.933" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="label" Content="政府资产：" HorizontalAlignment="Left" Height="26.133" Margin="10,10,0,0" VerticalAlignment="Top" Width="73.066"/>
+        <Label x:Name="label_Copy" Content="HXB" HorizontalAlignment="Left" Height="26.133" Margin="353.166,10,0,0" VerticalAlignment="Top" Width="73.066"/>
+        <TextBlock x:Name="textBlockallmoney" TextWrapping="Wrap" Margin="83.066,41.133,0,0" HorizontalAlignment="Left" Width="265.268" Background="#FF5CFCFF" Height="14.933" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="label_Copy1" Content="民众资产：" HorizontalAlignment="Left" Height="26.133" Margin="10,36.133,0,0" VerticalAlignment="Top" Width="73.066"/>
+        <Label x:Name="label_Copy2" Content="HXB" HorizontalAlignment="Left" Height="26.133" Margin="353.166,36.133,0,0" VerticalAlignment="Top" Width="73.066"/>
+        <TextBlock x:Name="textBlockmen" TextWrapping="Wrap" Margin="83.234,67.266,0,0" HorizontalAlignment="Left" Width="265.268" Background="#FF5CFCFF" Height="14.933" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="label_Copy3" Content="人民总数：" HorizontalAlignment="Left" Height="26.133" Margin="10.168,62.266,0,0" VerticalAlignment="Top" Width="73.066"/>
+        <Label x:Name="label_Copy4" Content="人" HorizontalAlignment="Left" Height="26.133" Margin="353.334,62.266,0,0" VerticalAlignment="Top" Width="73.066"/>
+
     </Grid>
 </Window>

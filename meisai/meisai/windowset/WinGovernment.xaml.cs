@@ -1,4 +1,5 @@
-﻿using System;
+﻿using meisai.government;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace meisai.windowset
 {
@@ -19,9 +21,32 @@ namespace meisai.windowset
     /// </summary>
     public partial class WinGovernment : Window
     {
-        public WinGovernment()
+        Government goverment;
+
+        public WinGovernment(Government goverment_)
         {
+            goverment = goverment_;
             InitializeComponent();
+            
+        }
+        public void Refresh()
+        {
+            textBlockgovmoney.Text = "" + goverment.GetGovMoney();
+            textBlockallmoney.Text = "" + goverment.GetAllMoney();
+            textBlockmen.Text = "" + goverment.GetMenCount();
+        }
+
+        public bool CanBeClose = false;
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            if (CanBeClose)
+            {
+                base.OnClosing(e);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
